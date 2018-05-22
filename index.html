@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" href="/dist/slides.css">
+  <!-- <script src="/node_modules/mathjax/Mathjax.js?config=TeX-AMS_CHTML"></script> -->
+  <!-- <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+</head>
+
+<body>
+  <div id="impress">
+    <!-- Intro -->
+    <div class="step slide" id="slide-intro-1" data-x="-3000" data-y="-1500">
+      <h1 class="slab">Progressive Web Apps</h1>
+      <h3>And the selfless workers that make them possible</h3>
+      <p>
+        <a href="https://j0.hn">John Fawcett</a>
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pronunciation-1" data-x="-3500" data-y="-500" data-rotate-z="90">
+      <h1 class="slab">PWA</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pronunciation-2" data-x="-3600" data-y="-500" data-rotate-z="90">
+      <h1 class="slide-list-item">Pronounced
+        <em>Pwuh</em>
+      </h1>
+    </div>
+
+    <!-- What are they -->
+    <div class="step slide" id="slide-what-are-they-1" data-x="-3600" data-y="-500" data-z="-1000" data-rotate-z="0">
+      <h1 class="slide-list-item">What makes them
+        <em>Progressive?</em>
+      </h1>
+      <div class="laundry-list" style="overflow: scroll; max-height: 100%; height: 540px">
+        <ul>
+          <li>
+            Site is served over HTTPS
+          </li>
+          <li>
+            Pages are responsive on tablets and mobile devices
+          </li>
+          <li>
+            All app URLs load while offline
+          </li>
+          <li>
+            Metadata provided for Add to Home screen
+          </li>
+          <li>
+            First load fast even on 3G
+          </li>
+          <li>
+            Site works cross-browser
+          </li>
+          <li>
+            Page transitions don't feel like they block on the network
+          </li>
+          <li>
+            Each page has a URL
+          </li>
+          <li>
+            Site's content is indexed by Google
+          </li>
+          <li>
+            Schema.org metadata is provided where appropriate
+          </li>
+          <li>
+            Social metadata is provided where appropriate
+          </li>
+          <li>
+            Canonical URLs are provided when necessary
+          </li>
+          <li>
+            Pages use the History API
+          </li>
+          <li>
+            Content doesn't jump as the page loads
+          </li>
+          <li>
+            Pressing back from a detail page retains scroll position on the previous list page
+          </li>
+          <li>
+            When tapped, inputs aren't obscured by the on screen keyboard
+          </li>
+          <li>
+            Content is easily shareable from standalone or full screen mode
+          </li>
+          <li>
+            Site is responsive across phone, tablet and desktop screen sizes
+          </li>
+          <li>
+            Any app install prompts are not used excessively
+          </li>
+          <li>
+            The Add to Home Screen prompt is intercepted
+          </li>
+          <li>
+            First load very fast even on 3G
+          </li>
+          <li>
+            Site uses cache-first networking
+          </li>
+          <li>
+            Site appropriately informs the user when they're offline
+          </li>
+          <li>
+            Provide context to the user about how notifications will be used
+          </li>
+          <li>
+            UI encouraging users to turn on Push Notifications must not be overly aggressive.
+          </li>
+          <li>
+            Site dims the screen when permission request is showing
+          </li>
+          <li>
+            Push notifications must be timely, precise and relevant
+          </li>
+          <li>
+            Provides controls to enable and disable notifications
+          </li>
+          <li>
+            User is logged in across devices via Credential Management API
+          </li>
+          <li>
+            User can pay easily via native UI from Payment Request API.
+          </li>
+          <li>
+            Site is served over HTTPS
+          </li>
+          <li>
+            Pages are responsive on tablets and mobile devices
+          </li>
+          <li>
+            All app URLs load while offline
+          </li>
+          <li>Hold on!!!</li>
+          <li>
+            Metadata provided for Add to Home screen
+          </li>
+          <li>
+            First load fast even on 3G
+          </li>
+          <li>
+            Site works cross-browser
+          </li>
+          <li>
+            Page transitions don't feel like they block on the network
+          </li>
+          <li>
+            Each page has a URL
+          </li>
+          <li>
+            Site's content is indexed by Google
+          </li>
+          <li>
+            Schema.org metadata is provided where appropriate
+          </li>
+          <li>
+            Social metadata is provided where appropriate
+          </li>
+          <li>
+            Canonical URLs are provided when necessary
+          </li>
+          <li>
+            Pages use the History API
+          </li>
+          <li>
+            Content doesn't jump as the page loads
+          </li>
+          <li>
+            Pressing back from a detail page retains scroll position on the previous list page
+          </li>
+          <li>
+            When tapped, inputs aren't obscured by the on screen keyboard
+          </li>
+          <li>
+            Content is easily shareable from standalone or full screen mode
+          </li>
+          <li>
+            Site is responsive across phone, tablet and desktop screen sizes
+          </li>
+          <li>
+            Any app install prompts are not used excessively
+          </li>
+          <li>
+            The Add to Home Screen prompt is intercepted
+          </li>
+          <li>
+            First load very fast even on 3G
+          </li>
+          <li>
+            Site uses cache-first networking
+          </li>
+          <li>
+            Site appropriately informs the user when they're offline
+          </li>
+          <li>
+            Provide context to the user about how notifications will be used
+          </li>
+          <li>
+            UI encouraging users to turn on Push Notifications must not be overly aggressive.
+          </li>
+          <li>
+            Site dims the screen when permission request is showing
+          </li>
+          <li>
+            Push notifications must be timely, precise and relevant
+          </li>
+          <li>
+            Provides controls to enable and disable notifications
+          </li>
+          <li>
+            User is logged in across devices via Credential Management API
+          </li>
+          <li>
+            User can pay easily via native UI from Payment Request API.
+          </li>
+          <li>
+            Site is served over HTTPS
+          </li>
+          <li>
+            Pages are responsive on tablets and mobile devices
+          </li>
+          <li>
+            All app URLs load while offline
+          </li>
+          <li>
+            Metadata provided for Add to Home screen
+          </li>
+          <li>Woweee look at me go!!!</li>
+          <li>
+            First load fast even on 3G
+          </li>
+          <li>
+            Site works cross-browser
+          </li>
+          <li>
+            Page transitions don't feel like they block on the network
+          </li>
+          <li>
+            Each page has a URL
+          </li>
+          <li>
+            Site's content is indexed by Google
+          </li>
+          <li>
+            Schema.org metadata is provided where appropriate
+          </li>
+          <li>
+            Social metadata is provided where appropriate
+          </li>
+          <li>
+            Canonical URLs are provided when necessary
+          </li>
+          <li>
+            Pages use the History API
+          </li>
+          <li>
+            Content doesn't jump as the page loads
+          </li>
+          <li>
+            Pressing back from a detail page retains scroll position on the previous list page
+          </li>
+          <li>
+            When tapped, inputs aren't obscured by the on screen keyboard
+          </li>
+          <li>
+            Content is easily shareable from standalone or full screen mode
+          </li>
+          <li>
+            Site is responsive across phone, tablet and desktop screen sizes
+          </li>
+          <li>
+            Any app install prompts are not used excessively
+          </li>
+          <li>
+            The Add to Home Screen prompt is intercepted
+          </li>
+          <li>
+            First load very fast even on 3G
+          </li>
+          <li>
+            Site uses cache-first networking
+          </li>
+          <li>
+            Site appropriately informs the user when they're offline
+          </li>
+          <li>
+            Provide context to the user about how notifications will be used
+          </li>
+          <li>
+            UI encouraging users to turn on Push Notifications must not be overly aggressive.
+          </li>
+          <li>
+            Site dims the screen when permission request is showing
+          </li>
+          <li>
+            Push notifications must be timely, precise and relevant
+          </li>
+          <li>
+            Provides controls to enable and disable notifications
+          </li>
+          <li>
+            User is logged in across devices via Credential Management API
+          </li>
+          <li>
+            User can pay easily via native UI from Payment Request API.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Intro self -->
+    <div class="step slide slide-list-item" id="slide-intro-self-1" data-x="-3600" data-y="-500" data-z="7000" data-rotate-z="720">
+      <h1 class="slab">But why does it matter?</h1>
+      <h2>And who are you to tell me what to do?!</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-intro-self-2" data-x="-3600" data-y="-350" data-z="7000" data-rotate-z="720">
+      <p>
+        <a href="https://j0.hn">John Fawcett</a>
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-intro-self-3" data-x="-3570" data-y="-300" data-z="7000" data-rotate-z="720">
+      <p>
+        Coffeeshops
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-intro-self-3" data-x="-3570" data-y="-250" data-z="7000" data-rotate-z="720">
+      <p>
+        Bars
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-intro-self-3" data-x="-3570" data-y="-200" data-z="7000" data-rotate-z="720">
+      <p>
+        On the road
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-intro-self-4" data-x="-3270" data-y="-200" data-z="7000" data-rotate-z="720">
+      <img src="/img/first-world.jpg" height="300">
+    </div>
+
+    <!-- history -->
+    <div class="step slide slide-list-item" id="slide-history-1" data-x="-2500" data-y="-400" data-z="7000" data-rotate-z="720">
+      <h1 class="slab">History</h1>
+      <p>Single Page Apps (SPA)</p>
+      <p>
+        <em>Another regrettable acronym</em>
+      </p>
+    </div>
+    <div class="step slide slide-list-item" id="slide-history-2" data-x="-2000" data-y="-400" data-z="7000" data-rotate-z="720">
+      <ul class="animate-in">
+        <li>GET</li>
+        <li>DELETE</li>
+        <li>POST</li>
+        <li>PATCH</li>
+        <li>PUT</li>
+        <li>...</li>
+      </ul>
+    </div>
+
+    <div class="step slide slide-list-item" id="slide-history-3" data-x="-1800" data-y="-400" data-z="7000" data-rotate-z="720">
+      <img src="/img/mobile-web.png">
+    </div>
+
+    <div class="step slide slide-list-item" id="slide-history-4" data-x="-1300" data-y="-400" data-z="7000" data-rotate-z="720">
+      <h1 class="slab">Platform for Applications</h1>
+    </div>
+
+    <div class="step slide slide-list-item" id="slide-history-5" data-x="-1300" data-y="-200" data-z="7000" data-rotate-z="720">
+      <img src="/img/backbone-icon.png" height="200">
+      <img src="/img/angular-icon.jpeg" height="200">
+    </div>
+    <div class="step slide slide-list-item" id="slide-history-6" data-x="-910" data-y="-200" data-z="7000" data-rotate-z="720">
+      <img src="/img/coffeescript-logo.png" height="200">
+    </div>
+
+    <!-- Phone Gap -->
+    <div class="step slide slide-list-item" id="slide-phone-gap-1" data-x="0" data-y="-200" data-z="7000" data-rotate-z="720">
+      <h1 class="slab">Phone Gap</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-phone-gap-2" data-x="0" data-y="-100" data-z="7000" data-rotate-z="720">
+      <h1>Cache Manifest</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-phone-gap-3" data-x="0" data-y="180" data-z="7000" data-rotate-z="720">
+      <pre><code class="bash">CACHE MANIFEST
+# v1 - 2011-08-13
+# This is a comment.
+http://www.example.com/index.html
+http://www.example.com/header.png
+http://www.example.com/blah/blah</code></pre>
+    </div>
+
+    <!-- PWAs -->
+    <div class="step slide slide-list-item" id="slide-pwa-1" data-x="0" data-y="180" data-z="5000">
+      <h1 class="slab">Back to PWAs</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-2" data-x="0" data-y="400" data-z="5000">
+      <p>
+        <em>"Just enable Progressive Web App on my site!"</em>
+      </p>
+      <p>-PHPCEO</p>
+      <img src="/img/phpceo-avatar.jpeg" height="180">
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-3" data-x="250" data-y="400" data-z="5000">
+      <h1 class="slab">The easy stuff</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-4" data-x="300" data-y="500" data-z="5000">
+      <h2>Use HTTPs</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-5" data-x="300" data-y="680" data-z="5000">
+      <h2>Indicate that you're webapp capable</h2>
+      <pre style="margin-top: -30px;">
+        <code class="html">&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</code>
+      </pre>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-6" data-x="300" data-y="760" data-z="5000">
+      <h2>Add application icons</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-7" data-x="300" data-y="840" data-z="5000">
+      <h2>Tell the browser about your theme</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-8" data-x="300" data-y="920" data-z="5000">
+      <h2>Create an app manifest</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-9" data-x="300" data-y="1260" data-z="5000">
+      <h2>Use the History API</h2>
+      <pre style="margin-top: 0; transform: scale(0.9)"><code class="javascript">document.addEventListener('click', e => {
+  if (e.target.href) {
+    const target = e.target;
+    if (target.host === window.location.host) {
+      e.preventDefault();
+      window.history.pushState({}, '', target.pathname)
+    }
+  }
+})</code></pre>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-10" data-x="300" data-y="1560" data-z="5000">
+      <h2>Specify heights for images and other media</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-11" data-x="300" data-y="1640" data-z="5000">
+      <h2>Use response HTML/CSS</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-12" data-x="900" data-y="1740" data-z="5000">
+      <h1 class="slab">The Harder Stuff</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-13" data-x="900" data-y="1840" data-z="5000">
+      <h2>Your application should work offline</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-14" data-x="900" data-y="1960" data-z="5000">
+      <ul class="animate-in">
+        <li>The Cache API</li>
+        <li>Service Workers</li>
+        <li>Offline/Online Events</li>
+      </ul>
+    </div>
+    <div class="step slide slide-list-item" id="slide-pwa-15" data-x="900" data-y="2300" data-z="5000">
+      <h2>Service Workers!</h2>
+      <pre style="font-size: 18px"><code class="javascript">addEventListener('fetch', e => {
+  // e.respondWith accepts a Promise which should resolve to a Response
+  e.respondWith(
+    (async () => {
+      // Check to see if we have a cached version of the response matching
+      // this request
+      const cache = await Cache.open('my-cache')
+      const response = cache.match(e.request)
+      if (response) return response
+
+      // If not, let's attempt the original request
+      return fetch(e.request)
+    })(),
+  )
+})</code></pre>
+    </div>
+    <div class="step slide slide-list-item" id="slide-budgetizer-1" data-x="1800" data-y="2300" data-z="5000">
+      <video autoplay loop muted id="carousel-video-1" style="height: 800px">
+        <source src="https://storage.j0.hn/budgetizer-movie-1.mp4" />
+      </video>
+    </div>
+    <div class="step slide slide-list-item" id="slide-budgetizer-2" data-x="2500" data-y="2300" data-z="5000">
+      <video autoplay loop muted id="carousel-video-1" style="height: 800px">
+        <source src="https://storage.j0.hn/budgetizer-movie-2.mp4" />
+      </video>
+    </div>
+    <div class="step slide slide-list-item" id="slide-budgetizer-3" data-x="3500" data-y="2300" data-z="5000">
+      <pre style="font-size: 18px"><code class="javascript">const staticFiles = ['/vendor.js', '/bundle.js', '/client.css']
+
+addEventListener('install', (e: InstallEvent) => {
+  // Cache all static assets
+  e.waitUntil(
+    (async () => {
+      const cache = await getCache()
+      return cache.addAll(staticFiles)
+    })(),
+  )
+})</code></pre>
+    </div>
+    <div class="step slide slide-list-item" id="slide-budgetizer-4" data-x="3500" data-y="2800" data-z="5000">
+      <pre style="font-size: 18px"><code class="javascript">addEventListener('fetch', (e: FetchEvent) => {
+  e.respondWith(handleRequest(e.request))
+})
+
+async function handleRequest(req: Request) {
+  const cache = await getCache()
+
+  // For any /budgets/:id/* URL, load the budgets application shell
+  if (req.url.indexOf('/budgets/') > -1) {
+    const url = new URL(req.url)
+    const id = url.pathname.split('/')[2]
+
+    if (id) {
+      url.pathname = '/budgets/' + id
+      const res = await cache.match(
+        new Request(url.toString(), { headers: req.headers }),
+      )
+      if (res) return res
+    }
+  }
+
+  const res = await caches.match(req)
+  if (res) return res
+
+  return fetch(req)
+}</code></pre>
+    </div>
+
+    <!-- Other things -->
+    <div class="step slide slide-list-item" id="slide-other-things-1" data-x="3500" data-y="3600" data-z="5000">
+      <h1 class="slab">Other Cool Things</h1>
+    </div>
+    <div class="step slide slide-list-item" id="slide-other-things-2" data-x="3500" data-y="3680" data-z="5000">
+      <h2>Send Notifications</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-other-things-3" data-x="3500" data-y="3760" data-z="5000">
+      <h2>Use the Credentials API</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-other-things-3" data-x="3500" data-y="3840" data-z="5000">
+      <h2>Use the Payments API</h2>
+    </div>
+    <div class="step slide slide-list-item" id="slide-other-things-4" data-x="3500" data-y="4200" data-z="5000">
+      <h2>LightHouse!</h2>
+      <img src="/img/lighthouse.png">
+    </div>
+    <div class="step slide slide-list-item" id="slide-other-things-5" data-x="4300" data-y="4200" data-z="5000">
+      <h2>LightHouse!</h2>
+      <img src="/img/lighthouse-screen-1.png">
+    </div>
+
+    <!-- Conclusion -->
+    <div class="step slide slide-list-item" id="slide-conclusion-1" data-x="4500" data-y="3900" data-z="5000">
+      <h1 class="slab">In Conclusion</h1>
+      <ul class="animate-in">
+        <li>
+          Use the Cache API to ensure your app assets are cached
+        </li>
+        <li>
+          Register a service worker to serve cached assets
+        </li>
+        <li>
+          Let the user know when they're operating offline
+        </li>
+        <li>
+          Your app should still work offline
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="/dist/slides.js"></script>
+</body>
+
+</html>

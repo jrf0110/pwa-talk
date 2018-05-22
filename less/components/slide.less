@@ -1,0 +1,34 @@
+#components { #slide {
+  .init(
+    @width: 900px,
+    @padding: 40px,
+    @vertical-margin: 20px,
+    @font-size: 36px,
+    @line-height: 1.5
+  ) {
+    .slide {
+      position: relative;
+      width: @width;
+      padding: @padding;
+      margin: @vertical-margin auto;
+      box-sizing: border-box;
+      font-size: @font-size;
+      line-height: @line-height;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+      z-index: 1;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+        z-index: 2;
+        pointer-events: all;
+      }
+
+      .slide-nav {
+        text-align: right;
+        margin-bottom: 24px;
+      }
+    }
+  }  
+}}

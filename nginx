@@ -1,0 +1,8 @@
+ server {
+  server_name pwa-talk.j0.hn;
+  listen 80;
+
+  root /apps/pwa-talk;
+  index index.html index.htm;
+}
+

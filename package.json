@@ -1,0 +1,42 @@
+{
+  "name": "amp-viewer-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chart.js": "^2.2.2",
+    "express": "^4.14.0",
+    "impress.js": "^0.6.0",
+    "leaflet": "^1.0.0-rc.3",
+    "lodash": "^4.15.0",
+    "mathbox": "^0.1.0",
+    "mathjax": "^2.6.1",
+    "superagent": "^2.2.0",
+    "watchify": "^3.10.0"
+  },
+  "devDependencies": {
+    "amp-viewer": "git+ssh://git@github.com/cloudflare/amp-viewer-build.git",
+    "browserify": "^13.1.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "highlight.js": "^9.10.0",
+    "less": "^2.7.1",
+    "mocha": "^3.0.2",
+    "static-server": "^2.0.4",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm run build:watch & npm run serve",
+    "serve": "static-server -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:js & npm run build:less",
+    "build:watch": "npm run build:less:watch & npm run build:js:watch",
+    "build:js": "browserify -d js/slides.js > dist/slides.js",
+    "build:js:watch": "watchify js/slides.js -o dist/slides.js -v",
+    "build:less": "lessc less/slides.less > dist/slides.css",
+    "build:less:watch": "watch \"npm run build:less\" less --interval=1"
+  },
+  "author": "",
+  "license": "ISC"
+}

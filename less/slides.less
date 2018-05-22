@@ -1,0 +1,286 @@
+@import (less) '../fonts/Roboto/font-face.css';
+@import (less) '../fonts/Roboto_Slab/font-face.css';
+@import (less) '../node_modules/amp-viewer/bundles/amp-viewer.css';
+@import (less) './node_modules/highlight.js/styles/dracula.css';
+
+@import './components/reset.less';
+@import './components/slide.less';
+@import './components/chart.less';
+@import './components/stats.less';
+@import './components/columns.less';
+
+@font-family-serif: 'Roboto Slab', serif;
+@font-family-sans-serif: 'Roboto', sans-serif;
+
+@palette-dark-blue: #051b2b;
+@palette-light-blue: #61c2ff;
+@palette-white: #fff;
+
+#components > #reset > .init();
+#components > #columns > .init();
+#components > #slide > .init(
+  @width: 1000px
+);
+#components > #chart > .init();
+#components > #stats > .init(
+  @font-family-serif: @font-family-serif
+);
+
+html,
+body {
+  font-family: @font-family-sans-serif;
+  margin: 0;
+  padding: 0;
+  background: @palette-dark-blue;
+  color: @palette-white;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+
+a {
+  display: inline-block;
+  color: @palette-light-blue;
+  padding: 0.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.9);
+  border-bottom-width: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+a:focus {
+  border-bottom-width: 0.2em;
+  padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  &.really-big {
+    font-size: 4em;
+  }
+}
+
+p {
+  color: fade(@palette-white, 80%);
+}
+
+small {
+  font-size: 0.6em;
+}
+
+button {
+  padding: 10px 24px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  transition: backbround 0.1s linear;
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.slab {
+  font-family: @font-family-serif;
+}
+
+ul,
+ol {
+  list-style: square;
+  margin-top: 24px;
+
+  li {
+    margin-left: 54px;
+  }
+}
+
+.impress-on-slide-intro-3,
+.impress-on-slide-intro-4,
+.impress-on-slide-constraints-1 {
+  ol > li {
+    transition: all 1s ease-out;
+  }
+}
+
+.impress-on-slide-intro-4,
+.impress-on-slide-constraints-1 {
+  #slide-intro-3 {
+    opacity: 1 !important;
+
+    ol > li {
+      transform: scale(1.2);
+      margin-top: 40px;
+    }
+
+    ol > li:last-child {
+      opacity: 0.2;
+      transform: scale(0.9);
+    }
+  }
+}
+
+[class*='impress-on-slide-pronuncation'] {
+  [id*='slide-pronuncation'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+
+[class*='impress-on-slide-history'] {
+  [id*='slide-history'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+[class*='impress-on-slide-intro-self'] {
+  [id*='slide-intro-self'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+[class*='impress-on-slide-phone-gap'] {
+  [id*='slide-phone-gap'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+[class*='impress-on-slide-pwa'] {
+  [id*='slide-pwa'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+[class*='impress-on-slide-other-things'] {
+  [id*='slide-other-things'] {
+    opacity: 0.4;
+  }
+  .active {
+    opacity: 1;
+  }
+  .active ~ .slide {
+    opacity: 0;
+  }
+}
+
+.impress-on-slide-css-1-2 {
+  #slide-css-1-1 {
+    opacity: 1;
+  }
+}
+
+.impress-on-slide-js-1-2 {
+  #slide-js-1 {
+    opacity: 1;
+  }
+}
+.impress-on-slide-js-2 {
+  #slide-js-1-2 {
+    opacity: 1;
+  }
+}
+
+#slide-constraints-1 {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+#slide-css-6 {
+  pre {
+    height: 540px;
+    overflow: scroll;
+  }
+}
+
+.hljs {
+  font-family: monospace;
+}
+
+.invisible-animate {
+  display: inline-block;
+}
+
+ul.animate-in {
+  .active & li {
+    animation: li-animate-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+
+  .loop(@i) when (@i = 24) {
+  }
+  .loop(@i) when (@i < 24) {
+    & + li {
+      animation-delay: @i * 200ms;
+      .loop(@i+1);
+    }
+  }
+
+  li:first-child {
+    .loop(0);
+  }
+}
+
+@keyframes li-animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
